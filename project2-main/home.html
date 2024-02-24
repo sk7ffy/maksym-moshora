@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+
+        </div>
+        <div>
+       <h1> The best News</h1> 
+    </div>
+    <div>
+        <a href="/auth/sign-in">Login</a>
+    </div>
+</header>
+    <main>
+        <section>
+            <h1>Sport</h1>
+            <div class="articles">
+                {% for new in news %}
+                <a class="article" href="/home/{{new['id']}}">
+                    <img src="https://cdn.britannica.com/51/190751-050-147B93F7/soccer-ball-goal.jpg" alt="">
+                    <div class="content">
+                        <h2>{{new['title']}}</h2>
+                        <p>{{new['content']}}</p>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        <section>
+            <h1>Cars</h1>
+        </section>
+    </main>
+</body>
+</html>
