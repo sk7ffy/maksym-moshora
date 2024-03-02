@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div>
+
+        </div>
+        <div>
+       <h1>News</h1> 
+    </div>
+    <div>
+        <a href="/auth/sign-in">Login</a>
+        
+    </div>
+</header>
+    <main>
+        <section>
+            <h1>Sport</h1>
+            <div class="articles">
+                {% for new in news %}
+                    <div class="content">
+                        <a class = 'new1_button'href='/news/{{new[1]}}'><img class="new1_image" src="{{new[4]}}" alt="new"></a>
+                        <!-- <h2>{{new[]}}</h2> -->
+                        <p>{{new[2]}}</p>
+                        <p>{{new[3]}}</p>
+                        <!-- <p>{{new[4]}}</p> -->
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </section>
+        <section>
+            <h1>Cars</h1>
+        </section>
+    </main>
+</body>
+</html>

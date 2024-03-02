@@ -1,0 +1,82 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    background: rgba(255, 246, 68, 0.468);
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.article {
+    max-width: 300px;   
+    border-radius: 20px;
+    overflow: hidden;
+    background: #3e3e3e20;
+    text-decoration: dashed;
+    color: #000;
+}
+
+
+.articles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.content {
+    padding: 10px;
+}
+img {
+    width: 100%;
+}
+
+header h1{
+    font-size: 55px;
+    font-style: oblique;
+    text-align: center;
+}
+
+.auth {
+    height: calc(100vh - 100px);
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 39px -11px rgba(0,0,0,0.75);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+field{
+    display:flex;
+    flex-direction: column;
+    
+}
