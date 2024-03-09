@@ -80,3 +80,34 @@ field{
     flex-direction: column;
     
 }
+
+.new1_image{
+    width: 300px;
+    border-radius: 8px;
+    background: rgb(34,193,195);
+    background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(0,106,30,1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+.content{
+    background: rgb(34,195,58);
+    background: linear-gradient(180deg, rgba(34,195,58,1) 0%, rgba(184,212,10,1) 100%);
+    border-radius:20px;  
+}
+.new1_button{
+    text-align: center;
+    margin-left: auto;
+    
+
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+}
+
+.content2{
+    background-image: url('https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg');
+}
+

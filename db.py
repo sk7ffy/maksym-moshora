@@ -74,9 +74,9 @@ def get_all_news():
 
 def get_news_by_id(id):
     open()
-    cursor.execute('''SELECT news.title, news.description, categories.name, 
+    cursor.execute('''SELECT news.title, news.description, news.image, categories.name
                    FROM news INNER JOIN categories 
-                   ON news.class_id == categories.id
+                   ON news.class_id == categories.id WHERE news.id = (?)
                 ''', [id])
     return cursor.fetchall()
 

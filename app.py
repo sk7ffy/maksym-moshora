@@ -7,12 +7,15 @@ def index():
     print(get_all_news())
     return render_template('home.html', news=get_all_news())
 
+@app.route("/about/us")
+def index2():
+    return render_template('about_us.html')
 
 @app.route("/home/<id>")
 def home(id):
     news = get_news_by_id(id)
     if news:
-        return render_template('news.html', showed_news=news)
+        return render_template('news.html', showed_news=news[0])
 
     
     return redirect('/')
@@ -37,6 +40,7 @@ def signIn():
 @app.route("/auth/sign-up")
 def signUp():
     return render_template('sign-in.html')
+
 
 
 
