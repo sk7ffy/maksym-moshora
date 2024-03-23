@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" type="x-icon" href="avd32.png">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <link rel="stylesheet" href="./style.css">
 
@@ -14,32 +15,30 @@
         <a href="about/us">About us</a>
         </div>
         <div>
-       <h1>News</h1> 
+       <h1>Car-Wikipedia</h1> 
     </div>
     <div>
         <a href="/auth/sign-in">Login</a>
+        <img src="imglogo.png" class="logo328">
         
     </div>
 </header>
     <main>
         <section>
-            <h1>Cars</h1>
+            
             <div class="articles">
                 {% for new in news %}
                     <div class="content">
-                        <a class = 'new1_button'href='/home/{{new[0]}}'><img class="new1_image" src="{{new[4]}}" alt="new"></a>
+                        <a class = 'new1_button'href='/home/{{new[0]}}'><img class="new1_image" src="{{new[3]}}" alt="new"></a>
                         
-                        <!-- <h2>{{new[]}}</h2> -->
-                        <p>{{new[2]}}</p>
-                        <p>{{new[3]}}</p>
-                        <!-- <p>{{new[4]}}</p> -->
-                    </div>
-                </a>
+                         
+                        <h3>{{new[1]}}</h3>
+                   </div>
                 {% endfor %}
             </div>
         </section>
         <section>
-            <h1>Sport</h1>
+            
         </section>
     </main>
 </body>

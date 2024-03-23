@@ -15,7 +15,7 @@ def index2():
 def home(id):
     news = get_news_by_id(id)
     if news:
-        return render_template('news.html', showed_news=news[0])
+        return render_template('news.html', showed_news=news)
 
     
     return redirect('/')

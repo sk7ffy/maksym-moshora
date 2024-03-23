@@ -6,10 +6,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
-<body>
-    <div class="block" style="position: absolute;">
-        <img src="{{showed_news[2]}}"
-        <h1>{{showed_news[1]}}</h1>
+<body>    
+    <header>
+    <div>
+    <a href="about/us">About us</a>
+    </div>
+    <div>
+   <h1>News</h1> 
+</div>
+<div>
+    <a href="/auth/sign-in">Login</a>
+    
+</div>
+</header>
+    <div class="news_page" >
+    <div class="news_page_content"> 
+        <img class="news_page_image" src="{{showed_news[3]}}">
+        <div>
+            <h1 class="news_page_title">{{showed_news[1]}}</h1>
+            <p class="news_page_description">
+                {{showed_news[2]}}
+            </p>
+        </div>
+        
+    </div>
+    
+        <iframe class="news_page_video" src="{{showed_news[5]}}" > </iframe>
         
     </div>
 </body>
